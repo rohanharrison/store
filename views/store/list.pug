@@ -1,0 +1,12 @@
+html
+  head
+    title= 'List'
+  body
+    form(method='POST' action='/store/list')
+          div.form-group
+            label(for='name') Name:
+            input#name.form-control(type='text', name='name')
+          div.form-group
+            label(for='description') Description:
+            input#description.form-control(type='text' name='description')
+          button.btn.btn-primary(type='submit') Add
