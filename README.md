@@ -5,6 +5,7 @@
 
 
 URLs:
-/login
-/register
-/store/list
+1. /login
+2. /register
+3. /store/list
+
