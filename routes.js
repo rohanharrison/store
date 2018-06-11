@@ -6,11 +6,10 @@ module.exports = function(app){
         res.render('index', { title: 'Test', message: 'Passing message from routes' })
     });
 
-    /*
-    Accounts
-        Register
-        Login
-    */
+    app.post('/', function (req, res) {
+        res.redirect('../login')
+    });
+
 
     //Register
     app.get('/register', function (req, res) {
@@ -20,6 +19,7 @@ module.exports = function(app){
     app.post('/register', function (req, res) {
         res.send(req.body)
     });
+
 
     //Login
     app.get('/login', function (req, res) {
