@@ -1,12 +1,13 @@
-html
-  head
-    title= 'List'
-  body
+include ../header
+body
     form(method='POST' action='/store/list')
           div.form-group
             label(for='name') Name:
             input#name.form-control(type='text', name='name')
           div.form-group
+            label(for='price') Price:
+            input#price.form-control(type='text', name='price')
+          div.form-group
             label(for='description') Description:
-            input#description.form-control(type='text' name='description')
+            textarea#description.form-control(name='description', rows='10', cols='30') Meow
           button.btn.btn-primary(type='submit') Add
