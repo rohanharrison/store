@@ -3,7 +3,7 @@ var app = require('./app');
 module.exports = function(app){
 
     app.get('/', function (req, res) {
-        res.send('Hello World!');
+        res.render('index', { title: 'Test', message: 'Passing message from routes' })
     });
 
 }
