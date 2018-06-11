@@ -3,7 +3,7 @@ var app = require('./app');
 module.exports = function(app){
     //Index
     app.get('/', function (req, res) {
-        res.render('index', { title: 'Home', message: 'Passing message from routes' })
+        res.render('index', {title: 'Home'})
     });
 
     app.post('/index_login', function (req, res) {
@@ -17,7 +17,7 @@ module.exports = function(app){
 
     //Register
     app.get('/register', function (req, res) {
-        res.render('register')
+        res.render('register', {title: 'Register'})
     });
 
     app.post('/register', function (req, res) {
@@ -27,7 +27,7 @@ module.exports = function(app){
 
     //Login
     app.get('/login', function (req, res) {
-        res.render('login')
+        res.render('login', {title: 'Login'})
     });
 
     app.post('/login', function (req, res) {
@@ -42,7 +42,7 @@ module.exports = function(app){
 
     //List
     app.get('/store/list', function (req, res) {
-        res.render('store/list')
+        res.render('store/list', {title: 'List'})
     });
 
     app.post('/store/list', function (req, res) {
