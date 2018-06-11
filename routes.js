@@ -15,4 +15,13 @@ module.exports = function(app){
         res.send(req.body)
     });
 
+    //Login
+    app.get('/login', function (req, res) {
+        res.render('login')
+    });
+
+    app.post('/login', function (req, res) {
+        res.send(req.body)
+    });
+
 }
